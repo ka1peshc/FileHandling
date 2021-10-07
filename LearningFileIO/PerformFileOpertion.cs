@@ -102,5 +102,15 @@ namespace LearningFileIO
             }
             sr.Close();
         }
+        /// <summary>
+        /// Append text in exited file.
+        /// </summary>
+        public static void WriteStringUsingStreamWriter()
+        {
+            using StreamWriter sw = File.AppendText(FILEPATH);
+            sw.WriteLine("This text is append using program");
+            sw.Close();
+            Console.WriteLine(File.ReadAllText(FILEPATH));
+        }
     }
 }

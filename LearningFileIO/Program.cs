@@ -13,8 +13,8 @@ namespace LearningFileIO
             //PerformFileOpertion.ReadAllText();
             //PerformFileOpertion.FileCopy();
             //PerformFileOpertion.DeleteFile();
-            PerformFileOpertion.ReadStringUsingStreamReader();
-
+            //PerformFileOpertion.ReadStringUsingStreamReader();
+            PerformFileOpertion.WriteStringUsingStreamWriter();
         }
     }
 }
