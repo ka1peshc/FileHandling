@@ -89,5 +89,18 @@ namespace LearningFileIO
                 Console.WriteLine("File not found");
             }
         }
+        /// <summary>
+        /// Read file using StreamReader namespace
+        /// </summary>
+        public static void ReadStringUsingStreamReader()
+        {
+            using StreamReader sr = File.OpenText(FILEPATH);
+            string readText = "";
+            while((readText= sr.ReadLine()) != null)
+            {
+                Console.WriteLine(readText);
+            }
+            sr.Close();
+        }
     }
 }
