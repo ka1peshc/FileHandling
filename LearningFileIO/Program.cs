@@ -9,6 +9,7 @@ namespace LearningFileIO
         {
             Console.WriteLine("Hello World!");
             PerformFileOpertion.FileExist();
+            PerformFileOpertion.ReadAllLines();
         }
     }
 }
