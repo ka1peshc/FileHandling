@@ -7,10 +7,11 @@ namespace LearningFileIO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            PerformFileOpertion.FileExist();
-            PerformFileOpertion.ReadAllLines();
-            PerformFileOpertion.ReadAllText();
+            Console.WriteLine("Working with File");
+            //PerformFileOpertion.FileExist();
+            //PerformFileOpertion.ReadAllLines();
+            //PerformFileOpertion.ReadAllText();
+            PerformFileOpertion.FileCopy();
         }
     }
 }

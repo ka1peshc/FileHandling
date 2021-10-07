@@ -56,5 +56,21 @@ namespace LearningFileIO
                 Console.WriteLine("File not found");
             }
         }
+        /// <summary>
+        /// Copy file from source to other file
+        /// </summary>
+        public static void FileCopy()
+        {
+            try
+            {
+                string copypath = @"D:\Bridgelabz lecture\Dot net\Day 27 C# File handling\TestingTextFileCopy.txt";
+                File.Copy(FILEPATH, copypath);
+                return;
+            }
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("File not found");
+            }
+        }
     }
 }
