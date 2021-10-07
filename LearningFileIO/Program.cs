@@ -12,6 +12,8 @@ namespace LearningFileIO
             //PerformFileOpertion.ReadAllLines();
             //PerformFileOpertion.ReadAllText();
             PerformFileOpertion.FileCopy();
+            PerformFileOpertion.DeleteFile();
+
         }
     }
 }

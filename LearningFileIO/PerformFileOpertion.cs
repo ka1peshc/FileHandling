@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 
+
 namespace LearningFileIO
 {
     class PerformFileOpertion
@@ -65,6 +66,22 @@ namespace LearningFileIO
             {
                 string copypath = @"D:\Bridgelabz lecture\Dot net\Day 27 C# File handling\TestingTextFileCopy.txt";
                 File.Copy(FILEPATH, copypath);
+                return;
+            }
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("File not found");
+            }
+        }
+        /// <summary>
+        /// Delete file given in file path
+        /// </summary>
+        public static void DeleteFile()
+        {
+            try
+            {
+                string copypath = @"D:\Bridgelabz lecture\Dot net\Day 27 C# File handling\TestingTextFileCopy.txt";
+                File.Delete(copypath);
                 return;
             }
             catch (FileNotFoundException)
