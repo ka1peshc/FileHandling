@@ -18,7 +18,9 @@ namespace LearningFileIO
             else
                 Console.WriteLine("Not present");
         }
-
+        /// <summary>
+        /// Read file one line at a time and store it in array
+        /// </summary>
         public static void ReadAllLines()
         {
             string[] lines;
@@ -35,7 +37,24 @@ namespace LearningFileIO
             {
                 Console.WriteLine("File not found");
             }
-            
+        }
+
+        /// <summary>
+        /// Read whole file as a single string
+        /// </summary>
+        public static void ReadAllText()
+        {
+            string lines;
+            try
+            {
+                lines = File.ReadAllText(FILEPATH);
+                Console.WriteLine(lines);
+                return;
+            }
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("File not found");
+            }
         }
     }
 }
